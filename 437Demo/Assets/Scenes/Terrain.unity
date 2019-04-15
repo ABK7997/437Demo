@@ -1536,6 +1536,32 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5a02f97198f821d4faebc27bb7445b68, type: 3}
+--- !u!1 &1528339674 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6460573464148000044, guid: 07ecdc98384d96e4781c65d15fd1772c,
+    type: 3}
+  m_PrefabInstance: {fileID: 6460573464419194722}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1528339676
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1528339674}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 278f2439b6adbc047a750a8ef24bf446, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  axes: 2
+  sensitivityX: 7
+  sensitivityY: 7
+  minimumX: -360
+  maximumX: 360
+  minimumY: -60
+  maximumY: 60
+  frameCounter: 20
 --- !u!1 &1696881701
 GameObject:
   m_ObjectHideFlags: 0
@@ -1719,6 +1745,26 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.042050533, y: 0.05003042, z: 0.04023445}
   m_Center: {x: -0.0011535988, y: 0.02498479, z: -0.0010592119}
+--- !u!114 &1743578319
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1743578317}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 278f2439b6adbc047a750a8ef24bf446, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  axes: 1
+  sensitivityX: 7
+  sensitivityY: 7
+  minimumX: -360
+  maximumX: 360
+  minimumY: -60
+  maximumY: 60
+  frameCounter: 20
 --- !u!1001 &1779488923
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2667,7 +2713,17 @@ PrefabInstance:
     - target: {fileID: 6460573464770069616, guid: 07ecdc98384d96e4781c65d15fd1772c,
         type: 3}
       propertyPath: rotationSpeedModifier
-      value: 2
+      value: 1.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 6460573464770069616, guid: 07ecdc98384d96e4781c65d15fd1772c,
+        type: 3}
+      propertyPath: diagonalSpeedInhibiter
+      value: 0.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 6460573464770069616, guid: 07ecdc98384d96e4781c65d15fd1772c,
+        type: 3}
+      propertyPath: movementSpeedModifier
+      value: 1.75
       objectReference: {fileID: 0}
     - target: {fileID: 6460573464148000044, guid: 07ecdc98384d96e4781c65d15fd1772c,
         type: 3}
@@ -2713,6 +2769,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_NormalizedViewPortRect.height
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6460573466162213805, guid: 07ecdc98384d96e4781c65d15fd1772c,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 07ecdc98384d96e4781c65d15fd1772c, type: 3}
